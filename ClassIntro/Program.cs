@@ -26,11 +26,11 @@ namespace ClassIntro
 
             // Console.WriteLine(kurs1.KursAdi+ " "+ kurs1.Egitmen);
 
-            Kurs[] kurslar = new Kurs[] {kurs1,kurs2,kurs3 };
+            Kurs[] kurslar = new Kurs[] { kurs1, kurs2, kurs3 };
 
             foreach (var kurs in kurslar)
             {
-                Console.WriteLine(kurs.KursAdi+" "+kurs.Egitmen+" "+kurs.KursIzlenmeOrani);
+                Console.WriteLine(kurs.KursAdi + " " + kurs.Egitmen + " " + kurs.KursIzlenmeOrani);
             }
         }
     }

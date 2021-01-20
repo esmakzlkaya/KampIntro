@@ -21,7 +21,7 @@ namespace Metotlar
             urun2.Fiyati = 80;
             urun2.Aciklama = "Diyarbakır Karpuzu";
 
-            Urun[] urunler = new Urun[] {urun1,urun2 };
+            Urun[] urunler = new Urun[] { urun1, urun2 };
             foreach (var urun in urunler)
             {
                 Console.WriteLine(urun.Id);
@@ -33,8 +33,8 @@ namespace Metotlar
             //cw - console.writeline kısa yolu
             Console.WriteLine("-----Metotlar----\n");
 
-    //instance - class örneği - nesne
-    //encapsulation - ekle2 patladı(elle müdahale gerekti), ekle sorunsuz çalışıyor: (yeni bir özellik eklendiğinde)
+            //instance - class örneği - nesne
+            //encapsulation - ekle2 patladı(elle müdahale gerekti), ekle sorunsuz çalışıyor: (yeni bir özellik eklendiğinde)
 
             SepetManager sepetManager = new SepetManager();
             sepetManager.Ekle(urun1);
@@ -42,9 +42,9 @@ namespace Metotlar
 
             Console.WriteLine("---------------------");
 
-            sepetManager.Ekle2("Armut", "Yeşil armut", 12,10);
-            sepetManager.Ekle2("Elma", "Yeşil elma", 15,9);
-            sepetManager.Ekle2("Karpuz", "Diyarbakır karpuzu", 80,1);
+            sepetManager.Ekle2("Armut", "Yeşil armut", 12, 10);
+            sepetManager.Ekle2("Elma", "Yeşil elma", 15, 9);
+            sepetManager.Ekle2("Karpuz", "Diyarbakır karpuzu", 80, 1);
 
         }
     }
