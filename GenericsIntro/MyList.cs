@@ -15,12 +15,12 @@ namespace GenericsIntro
         }
         public void Add(T item)
         {
-            T[] tempArray = items;//geçici olarak items ın adresini geçici diziye tutturuyoruz.
+            T[] tempArray = items;//geçici olarak items ın adresini(Referans numarasını) geçici diziye tutturuyoruz.
             items = new T[items.Length+1]; //itemsın boyutunu 1 arttırdık
             for (int i = 0; i < tempArray.Length; i++)
             {
-                items[i] = tempArray[i]; // itemsa değerlerini geri veriyoruz ve artık bu
-           //     değerlere ek artık boş bir elemanımız daha var.
+                items[i] = tempArray[i]; // itemsa değerlerini(aslında eski referans numarasını geri veriyoruz)
+                //geri veriyoruz ve artık bu değerlere ek artık boş bir elemanımız daha var.
             }
             items[items.Length - 1] = item;
             Console.WriteLine(items[items.Length-1]+" eklendi");
@@ -28,5 +28,8 @@ namespace GenericsIntro
         //itemsın boyutu= 5 diyelim, 5-1=4, diziler 0 ile başladığına göre dizinin [4] = 5. eleman olmuş olur
 
         }
+
+       
+       
     }
 }
